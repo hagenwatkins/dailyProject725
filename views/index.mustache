@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User Directory</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <ul>
+      {{#users}}
+
+      <img src="{{avatar}}" alt="whatevs">
+    <ul>
+      <h2 style="color:#417AC9">{{name}}</h2>
+      {{#company}}<li>{{company}}</li>{{/company}}
+      {{^company}}<li style="color: red">Available for hire</li>{{/company}}
+    </ul>
+      {{/users}}
+
+    </ul>
+  </body>
+</html>
