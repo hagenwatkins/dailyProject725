@@ -6,17 +6,25 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
   <body>
-    <ul>
-      {{#users}}
+    
+    <h1>Index</h1>
 
-      <img src="{{avatar}}" alt="whatevs">
-    <ul>
-      <h2 style="color:#417AC9">{{name}}</h2>
-      {{#company}}<li>{{company}}</li>{{/company}}
-      {{^company}}<li style="color: red">Available for hire</li>{{/company}}
-    </ul>
-      {{/users}}
 
-    </ul>
+
+      <div id ="container">
+        {{#users}}
+        <div class="users">
+        <img src="{{avatar}}" alt="whatevs">
+        <h2 style="color:#417AC9">
+          <a href="/details/{{id}}/{{data}}">{{name}}</a>
+        </h2>
+        {{job}}
+        {{#company}}{{company}}{{/company}}
+        {{^company}}<p class="para", style="color: red">Available for hire</p>{{/company}}
+        </div>
+        {{/users}}
+      </div>
+
+
   </body>
 </html>

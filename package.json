@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
-    "mustache-express": "^1.2.5"
+    "mongodb": "^2.2.30",
+    "mustache-express": "^1.2.5",
+    "nodemon": "^1.11.0"
   }
 }
